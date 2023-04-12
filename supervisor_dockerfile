@@ -1,0 +1,20 @@
+FROM python:3.7-slim-buster
+
+RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
+
+RUN echo "deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free" > /etc/apt/sources.list \
+    && echo "deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free" >> /etc/apt/sources.list
+
+RUN apt-get update && apt-get install -y supervisor
+
+COPY ./requirements.txt /app/
+
+WORKDIR /app
+
+RUN pip install -r requirements.txt -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+COPY . /app/
+
+EXPOSE 8000
+
+ENTRYPOINT [ "bash","./supervisor.sh" ]

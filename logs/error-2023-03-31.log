@@ -1,0 +1,759 @@
+ERROR 2023-03-31 07:12:37,454 ws_protocol 123 ： [Failure instance: Traceback: <class 'ValueError'>: No route found for path 'ws/msg'.
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/autobahn/websocket/protocol.py:2909:processHandshake
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/txaio/tx.py:369:as_future
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/ws_protocol.py:83:onConnect
+--- <exception caught here> ---
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/server.py:200:create_application
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/staticfiles.py:41:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:58:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:47:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:145:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:169:__init__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py:31:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:154:__call__
+]
+ERROR 2023-03-31 07:13:21,729 ws_protocol 123 ： [Failure instance: Traceback: <class 'ValueError'>: No route found for path 'ws/msg'.
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/autobahn/websocket/protocol.py:2909:processHandshake
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/txaio/tx.py:369:as_future
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/ws_protocol.py:83:onConnect
+--- <exception caught here> ---
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/server.py:200:create_application
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/staticfiles.py:41:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:58:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:47:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:145:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:169:__init__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py:31:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:154:__call__
+]
+ERROR 2023-03-31 07:15:34,312 ws_protocol 123 ： [Failure instance: Traceback: <class 'ValueError'>: No route found for path 'ws/msg'.
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/autobahn/websocket/protocol.py:2909:processHandshake
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/txaio/tx.py:369:as_future
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/ws_protocol.py:83:onConnect
+--- <exception caught here> ---
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/server.py:200:create_application
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/staticfiles.py:41:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:58:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:47:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:145:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:169:__init__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py:31:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:154:__call__
+]
+ERROR 2023-03-31 07:27:38,474 ws_protocol 123 ： [Failure instance: Traceback: <class 'ValueError'>: No route found for path 'ws/chat'.
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/autobahn/websocket/protocol.py:2909:processHandshake
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/txaio/tx.py:369:as_future
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/ws_protocol.py:83:onConnect
+--- <exception caught here> ---
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/server.py:200:create_application
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/staticfiles.py:41:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:58:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/security/websocket.py:37:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:47:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:145:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:169:__init__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py:31:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:154:__call__
+]
+ERROR 2023-03-31 07:33:38,805 ws_protocol 123 ： [Failure instance: Traceback: <class 'ValueError'>: No route found for path 'ws/chat'.
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/autobahn/websocket/protocol.py:2909:processHandshake
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/txaio/tx.py:369:as_future
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/ws_protocol.py:83:onConnect
+--- <exception caught here> ---
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/server.py:200:create_application
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/staticfiles.py:41:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:58:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/security/websocket.py:37:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:47:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:145:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:169:__init__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py:31:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:154:__call__
+]
+ERROR 2023-03-31 07:34:09,652 ws_protocol 123 ： [Failure instance: Traceback: <class 'ValueError'>: No route found for path 'ws/chat'.
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/autobahn/websocket/protocol.py:2909:processHandshake
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/txaio/tx.py:369:as_future
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/ws_protocol.py:83:onConnect
+--- <exception caught here> ---
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/twisted/internet/defer.py:206:maybeDeferred
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/daphne/server.py:200:create_application
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/staticfiles.py:41:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:58:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/security/websocket.py:37:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:47:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:145:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py:169:__init__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py:31:__call__
+/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/routing.py:154:__call__
+]
+ERROR 2023-03-31 07:38:33,110 server 288 ： Exception inside application: BACKEND is unconfigured or doesn't support groups
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 33, in websocket_connect
+    async_to_sync(self.channel_layer.group_add)(group, self.channel_name)
+AttributeError: 'NoneType' object has no attribute 'group_add'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 62, in __call__
+    await await_many_dispatch([receive], self.dispatch)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/utils.py", line 52, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 448, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/tasks.py", line 388, in wait_for
+    return await fut
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 490, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 105, in dispatch
+    handler(message)
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 37, in websocket_connect
+    super(BaseWebsocket, self).websocket_connect(message)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 36, in websocket_connect
+    "BACKEND is unconfigured or doesn't support groups"
+channels.exceptions.InvalidChannelLayerError: BACKEND is unconfigured or doesn't support groups
+ERROR 2023-03-31 07:56:20,022 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer.send('ceshi')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 79, in send
+    raise ValueError("You must pass one of bytes_data or text_data")
+ValueError: You must pass one of bytes_data or text_data
+ERROR 2023-03-31 07:56:20,024 runserver 154 ： HTTP POST /user/login/ 500 [0.21, 127.0.0.1:55336]
+ERROR 2023-03-31 07:56:55,769 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer().send('ceshi')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 23, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'scope'
+ERROR 2023-03-31 07:56:55,770 runserver 154 ： HTTP POST /user/login/ 500 [0.21, 127.0.0.1:55347]
+ERROR 2023-03-31 08:02:04,215 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer().send('ceshi')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 23, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'scope'
+ERROR 2023-03-31 08:02:04,217 runserver 154 ： HTTP POST /user/login/ 500 [0.21, 127.0.0.1:55479]
+ERROR 2023-03-31 08:02:47,094 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer('a').send('ceshi')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 75, in send
+    super().send({"type": "websocket.send", "text": text_data})
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 113, in send
+    self.base_send(message)
+AttributeError: 'ChatConsumer' object has no attribute 'base_send'
+ERROR 2023-03-31 08:02:47,095 runserver 154 ： HTTP POST /user/login/ 500 [0.24, 127.0.0.1:55493]
+ERROR 2023-03-31 08:08:13,636 server 288 ： Exception inside application: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 59, in __call__
+    [receive, self.channel_receive], self.dispatch
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/utils.py", line 52, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 448, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/tasks.py", line 388, in wait_for
+    return await fut
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 490, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 105, in dispatch
+    handler(message)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 106, in websocket_disconnect
+    self.disconnect(message["code"])
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 23, in disconnect
+    PENDING.remove(0)
+ValueError: list.remove(x): x not in list
+ERROR 2023-03-31 08:08:45,848 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    PENDING[0].send('wzj')
+IndexError: list index out of range
+ERROR 2023-03-31 08:08:45,849 runserver 154 ： HTTP POST /user/login/ 500 [0.21, 127.0.0.1:55604]
+ERROR 2023-03-31 08:23:50,522 server 288 ： Exception inside application: Group name must be a valid unicode string containing only ASCII alphanumerics, hyphens, or periods.
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 59, in __call__
+    [receive, self.channel_receive], self.dispatch
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/utils.py", line 52, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 448, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/tasks.py", line 388, in wait_for
+    return await fut
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 490, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 105, in dispatch
+    handler(message)
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 71, in websocket_connect
+    super(ChatJsonConsumer, self).websocket_connect(message)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 33, in websocket_connect
+    async_to_sync(self.channel_layer.group_add)(group, self.channel_name)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 240, in __call__
+    return call_result.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 306, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels_redis/core.py", line 517, in group_add
+    assert self.valid_group_name(group), "Group name not valid"
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/layers.py", line 168, in valid_group_name
+    "Group name must be a valid unicode string containing only ASCII "
+TypeError: Group name must be a valid unicode string containing only ASCII alphanumerics, hyphens, or periods.
+ERROR 2023-03-31 08:29:54,825 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatJsonConsumer().group_send('room1', 'test')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 23, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'scope'
+ERROR 2023-03-31 08:29:54,826 runserver 154 ： HTTP POST /user/login/ 500 [0.28, 127.0.0.1:56115]
+ERROR 2023-03-31 08:30:30,558 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 732, in disconnect
+    self._writer.close()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 317, in close
+    return self._transport.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 650, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 688, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+ERROR 2023-03-31 08:31:20,311 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 732, in disconnect
+    self._writer.close()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 317, in close
+    return self._transport.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 650, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 688, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+ERROR 2023-03-31 08:32:58,181 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatJsonConsumer.group_send('room1', 'test')
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 56, in group_send
+    loop = asyncio.get_event_loop()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/events.py", line 644, in get_event_loop
+    % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'ThreadPoolExecutor-0_0'.
+ERROR 2023-03-31 08:32:58,182 runserver 154 ： HTTP POST /user/login/ 500 [0.26, 127.0.0.1:56275]
+ERROR 2023-03-31 08:37:55,012 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatJsonConsumer().group_send('room1', 'test')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 23, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'scope'
+ERROR 2023-03-31 08:37:55,014 runserver 154 ： HTTP POST /user/login/ 500 [0.26, 127.0.0.1:56648]
+ERROR 2023-03-31 08:40:57,797 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatJsonConsumer.group_send('room1', 'test')
+NameError: name 'ChatJsonConsumer' is not defined
+ERROR 2023-03-31 08:40:57,798 runserver 154 ： HTTP POST /user/login/ 500 [0.24, 127.0.0.1:56693]
+ERROR 2023-03-31 08:53:58,462 server 288 ： Exception inside application: name 'ChatJsonConsumer' is not defined
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 59, in __call__
+    [receive, self.channel_receive], self.dispatch
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/utils.py", line 52, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 448, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/tasks.py", line 388, in wait_for
+    return await fut
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 490, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 105, in dispatch
+    handler(message)
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 59, in websocket_connect
+    super(ChatJsonConsumer, self).websocket_connect(message)
+NameError: name 'ChatJsonConsumer' is not defined
+ERROR 2023-03-31 08:54:13,859 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer.group_send('asgi:group:room1', 'test')
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 47, in group_send
+    "close": close
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 584, in run_until_complete
+    return future.result()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels_redis/core.py", line 543, in group_send
+    assert self.valid_group_name(group), "Group name not valid"
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/layers.py", line 168, in valid_group_name
+    "Group name must be a valid unicode string containing only ASCII "
+TypeError: Group name must be a valid unicode string containing only ASCII alphanumerics, hyphens, or periods.
+ERROR 2023-03-31 08:54:13,861 runserver 154 ： HTTP POST /user/login/ 500 [0.22, 127.0.0.1:56947]
+ERROR 2023-03-31 08:54:47,941 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 732, in disconnect
+    self._writer.close()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 317, in close
+    return self._transport.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 650, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 688, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+ERROR 2023-03-31 08:59:47,138 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer.group_send('room1', 'test')
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 50, in group_send
+    loop = asyncio.get_event_loop()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/events.py", line 644, in get_event_loop
+    % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'ThreadPoolExecutor-0_0'.
+ERROR 2023-03-31 08:59:47,140 runserver 154 ： HTTP POST /user/login/ 500 [0.24, 127.0.0.1:57198]
+ERROR 2023-03-31 09:01:50,782 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer.group_send('room1', 'test')
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 43, in group_send
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+AttributeError: module 'asyncio' has no attribute 'WindowsSelectorEventLoopPolicy'
+ERROR 2023-03-31 09:01:50,784 runserver 154 ： HTTP POST /user/login/ 500 [0.21, 127.0.0.1:57256]
+ERROR 2023-03-31 09:02:26,616 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 732, in disconnect
+    self._writer.close()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 317, in close
+    return self._transport.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 650, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 688, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+ERROR 2023-03-31 09:05:56,071 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 732, in disconnect
+    self._writer.close()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 317, in close
+    return self._transport.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 650, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 688, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+ERROR 2023-03-31 09:06:05,803 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 732, in disconnect
+    self._writer.close()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 317, in close
+    return self._transport.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 650, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 688, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+ERROR 2023-03-31 09:06:06,369 server 288 ： Exception inside application: No handler for message type group.message
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 59, in __call__
+    [receive, self.channel_receive], self.dispatch
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/utils.py", line 52, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 448, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/tasks.py", line 388, in wait_for
+    return await fut
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 490, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 107, in dispatch
+    raise ValueError("No handler for message type %s" % message["type"])
+ValueError: No handler for message type group.message
+ERROR 2023-03-31 09:06:50,017 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 732, in disconnect
+    self._writer.close()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 317, in close
+    return self._transport.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 650, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 688, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+ERROR 2023-03-31 09:15:17,956 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 732, in disconnect
+    self._writer.close()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 317, in close
+    return self._transport.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 650, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 688, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+ERROR 2023-03-31 09:18:02,486 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer.group_send('room1', 'test')
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 54, in group_send
+    loop = asyncio.get_event_loop()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/events.py", line 644, in get_event_loop
+    % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'ThreadPoolExecutor-0_0'.
+ERROR 2023-03-31 09:18:02,490 runserver 154 ： HTTP POST /user/login/ 500 [0.25, 127.0.0.1:57827]
+ERROR 2023-03-31 09:19:20,118 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer.group_send('room1', 'test')
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 54, in group_send
+    loop = asyncio.get_event_loop()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/events.py", line 644, in get_event_loop
+    % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'ThreadPoolExecutor-0_0'.
+ERROR 2023-03-31 09:19:20,120 runserver 154 ： HTTP POST /user/login/ 500 [0.25, 127.0.0.1:57890]
+ERROR 2023-03-31 09:22:11,841 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Task <Task pending coro=<Connection.disconnect() running at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:736>> got Future <Future pending> attached to a different loop')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 736, in disconnect
+    await self._writer.wait_closed()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 323, in wait_closed
+    await self._protocol._closed
+RuntimeError: Task <Task pending coro=<Connection.disconnect() running at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:736>> got Future <Future pending> attached to a different loop
+ERROR 2023-03-31 09:24:49,495 base_events 1608 ： Task exception was never retrieved
+future: <Task finished coro=<Connection.disconnect() done, defined at /Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py:723> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/redis/asyncio/connection.py", line 732, in disconnect
+    self._writer.close()  # type: ignore[union-attr]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/streams.py", line 317, in close
+    return self._transport.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 650, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 688, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed

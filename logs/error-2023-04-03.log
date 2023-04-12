@@ -1,0 +1,347 @@
+ERROR 2023-04-03 00:43:22,591 server 288 ： Exception inside application: 'Agent' object has no attribute 'scope'
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 59, in __call__
+    [receive, self.channel_receive], self.dispatch
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/utils.py", line 52, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 448, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/tasks.py", line 388, in wait_for
+    return await fut
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 490, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 105, in dispatch
+    handler(message)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 21, in connect
+    Agent(self)
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 13, in __init__
+    print(self.scope)
+AttributeError: 'Agent' object has no attribute 'scope'
+ERROR 2023-04-03 00:54:43,929 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer().send('test')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 23, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'scope'
+ERROR 2023-04-03 00:54:43,930 runserver 154 ： HTTP POST /user/login/ 500 [0.20, 127.0.0.1:61026]
+ERROR 2023-04-03 00:55:05,186 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer.send('test')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 79, in send
+    raise ValueError("You must pass one of bytes_data or text_data")
+ValueError: You must pass one of bytes_data or text_data
+ERROR 2023-04-03 00:55:05,187 runserver 154 ： HTTP POST /user/login/ 500 [0.20, 127.0.0.1:61034]
+ERROR 2023-04-03 00:55:26,554 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 32, in post
+    ChatConsumer('room1').send('test')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 75, in send
+    super().send({"type": "websocket.send", "text": text_data})
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 113, in send
+    self.base_send(message)
+AttributeError: 'ChatConsumer' object has no attribute 'base_send'
+ERROR 2023-04-03 00:55:26,555 runserver 154 ： HTTP POST /user/login/ 500 [0.24, 127.0.0.1:61048]
+ERROR 2023-04-03 00:57:49,929 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 33, in post
+    PENDING.get('room1').send('test')
+AttributeError: 'list' object has no attribute 'send'
+ERROR 2023-04-03 00:57:49,930 runserver 154 ： HTTP POST /user/login/ 500 [0.22, 127.0.0.1:61076]
+ERROR 2023-04-03 01:00:18,024 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 33, in post
+    item.send_group('test')
+AttributeError: 'ChatConsumer' object has no attribute 'send_group'
+ERROR 2023-04-03 01:00:18,026 runserver 154 ： HTTP POST /user/login/ 500 [0.21, 127.0.0.1:61132]
+ERROR 2023-04-03 01:00:44,780 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 33, in post
+    item.group_send('test')
+AttributeError: 'ChatConsumer' object has no attribute 'group_send'
+ERROR 2023-04-03 01:00:44,781 runserver 154 ： HTTP POST /user/login/ 500 [0.24, 127.0.0.1:61141]
+ERROR 2023-04-03 01:00:46,015 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 33, in post
+    item.group_send('test')
+AttributeError: 'ChatConsumer' object has no attribute 'group_send'
+ERROR 2023-04-03 01:00:46,016 runserver 154 ： HTTP POST /user/login/ 500 [0.21, 127.0.0.1:61141]
+ERROR 2023-04-03 01:05:40,313 server 288 ： Exception inside application: BACKEND is unconfigured or doesn't support groups
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 33, in websocket_connect
+    async_to_sync(self.channel_layer.group_add)(group, self.channel_name)
+AttributeError: 'NoneType' object has no attribute 'group_add'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 62, in __call__
+    await await_many_dispatch([receive], self.dispatch)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/utils.py", line 52, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 448, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/tasks.py", line 388, in wait_for
+    return await fut
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 490, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/consumer.py", line 105, in dispatch
+    handler(message)
+  File "/Users/wzj/project_python/Django/drf_gather/app/consumers.py", line 39, in websocket_connect
+    super(ChatConsumer, self).websocket_connect(message)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 36, in websocket_connect
+    "BACKEND is unconfigured or doesn't support groups"
+channels.exceptions.InvalidChannelLayerError: BACKEND is unconfigured or doesn't support groups
+ERROR 2023-04-03 01:26:16,311 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 36, in post
+    ChatConsumer().group_sen('room1', 'wzj')
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/channels/generic/websocket.py", line 23, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'scope'
+ERROR 2023-04-03 01:26:16,314 runserver 154 ： HTTP POST /user/login/ 500 [0.23, 127.0.0.1:61659]
+ERROR 2023-04-03 01:41:44,680 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+ERROR 2023-04-03 01:41:44,682 runserver 154 ： HTTP POST /user/login/ 500 [0.09, 127.0.0.1:61978]
+ERROR 2023-04-03 02:09:26,972 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 34, in post
+    sync_to_async(item.send('test'))
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 545, in sync_to_async
+    executor=executor,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/asgiref/sync.py", line 377, in __init__
+    raise TypeError("sync_to_async can only be applied to sync functions.")
+TypeError: sync_to_async can only be applied to sync functions.
+ERROR 2023-04-03 02:09:26,973 runserver 154 ： HTTP POST /user/login/ 500 [0.24, 127.0.0.1:62593]
+ERROR 2023-04-03 02:58:12,215 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+ERROR 2023-04-03 02:58:12,216 runserver 154 ： HTTP POST /user/login/ 500 [0.08, 127.0.0.1:63666]
+ERROR 2023-04-03 03:07:32,857 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+ERROR 2023-04-03 03:07:32,858 runserver 154 ： HTTP POST /user/login/ 500 [0.06, 127.0.0.1:64067]

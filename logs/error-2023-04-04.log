@@ -1,0 +1,94 @@
+ERROR 2023-04-04 06:42:33,665 log 228 ： Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+ERROR 2023-04-04 06:42:33,667 runserver 154 ： HTTP POST /user/login/ 500 [0.10, 127.0.0.1:55886]
+ERROR 2023-04-04 08:05:46,439 log 228 ： Internal Server Error: /user/es/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/wzj/project_python/Django/drf_gather/app/apis.py", line 86, in get
+    result = es.search(index="haystack", doc_type="modelresult", body=body)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 1627, in search
+    body=body,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/base.py", line 244, in _raise_error
+    status_code, error_message, additional_info
+elasticsearch.exceptions.NotFoundError: NotFoundError(404, 'index_not_found_exception', 'no such index [haystack]', haystack, index_or_alias)
+ERROR 2023-04-04 08:05:46,442 runserver 154 ： HTTP GET /user/es/?text=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD 500 [0.05, 127.0.0.1:58787]
+ERROR 2023-04-04 08:18:02,151 elasticsearch_backend 599 ： Failed to query Elasticsearch using 'text:(中华人民共和国)': RequestError(400, 'parsing_exception', 'unknown query [filtered]')
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/haystack/backends/elasticsearch_backend.py", line 589, in search
+    **self._get_doc_type_option(),
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 1627, in search
+    body=body,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/base.py", line 244, in _raise_error
+    status_code, error_message, additional_info
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', 'unknown query [filtered]')
+ERROR 2023-04-04 08:18:02,169 elasticsearch_backend 599 ： Failed to query Elasticsearch using 'text:(中华人民共和国)': RequestError(400, 'parsing_exception', 'unknown query [filtered]')
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/haystack/backends/elasticsearch_backend.py", line 589, in search
+    **self._get_doc_type_option(),
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 1627, in search
+    body=body,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/base.py", line 244, in _raise_error
+    status_code, error_message, additional_info
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', 'unknown query [filtered]')
+CRITICAL 2023-04-04 09:50:24,245 server 157 ： Listen failure: Couldn't listen on 127.0.0.1:8000: [Errno 48] Address already in use.
+ERROR 2023-04-04 09:50:26,192 log 228 ： Internal Server Error: /user/article/
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2023-04-04 09:50:26,194 runserver 154 ： HTTP GET /user/article/?q=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD 500 [0.11, 127.0.0.1:53426]
+CRITICAL 2023-04-04 10:02:37,797 server 157 ： Listen failure: Couldn't listen on 127.0.0.1:8000: [Errno 48] Address already in use.

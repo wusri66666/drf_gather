@@ -1,0 +1,342 @@
+ERROR 2023-04-10 05:23:06,356 elasticsearch7_backend 165 ： Failed to clear Elasticsearch index: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f88f27d90f0>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f88f27d90f0>: Failed to establish a new connection: [Errno 61] Connection refused)
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 229, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f88f27d90f0>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/haystack/backends/elasticsearch7_backend.py", line 123, in clear
+    self.conn.indices.delete(index=self.index_name, ignore=404)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/indices.py", line 270, in delete
+    "DELETE", _make_path(index), params=params, headers=headers
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f88f27d90f0>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f88f27d90f0>: Failed to establish a new connection: [Errno 61] Connection refused)
+ERROR 2023-04-10 05:24:00,919 elasticsearch7_backend 165 ： Failed to clear Elasticsearch index: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7fa1d108b0f0>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7fa1d108b0f0>: Failed to establish a new connection: [Errno 61] Connection refused)
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 229, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa1d108b0f0>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/haystack/backends/elasticsearch7_backend.py", line 123, in clear
+    self.conn.indices.delete(index=self.index_name, ignore=404)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/indices.py", line 270, in delete
+    "DELETE", _make_path(index), params=params, headers=headers
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7fa1d108b0f0>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7fa1d108b0f0>: Failed to establish a new connection: [Errno 61] Connection refused)
+ERROR 2023-04-10 05:24:52,392 elasticsearch7_backend 165 ： Failed to clear Elasticsearch index: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f7c601db0f0>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f7c601db0f0>: Failed to establish a new connection: [Errno 61] Connection refused)
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 229, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f7c601db0f0>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/haystack/backends/elasticsearch7_backend.py", line 123, in clear
+    self.conn.indices.delete(index=self.index_name, ignore=404)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/indices.py", line 270, in delete
+    "DELETE", _make_path(index), params=params, headers=headers
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f7c601db0f0>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f7c601db0f0>: Failed to establish a new connection: [Errno 61] Connection refused)
+ERROR 2023-04-10 05:27:13,851 elasticsearch7_backend 158 ： Failed to clear Elasticsearch index: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f79f8d041d0>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f79f8d041d0>: Failed to establish a new connection: [Errno 61] Connection refused)
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 229, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f79f8d041d0>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/haystack/backends/elasticsearch7_backend.py", line 116, in clear
+    self.conn.indices.delete(index=self.index_name, ignore=404)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/indices.py", line 270, in delete
+    "DELETE", _make_path(index), params=params, headers=headers
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f79f8d041d0>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f79f8d041d0>: Failed to establish a new connection: [Errno 61] Connection refused)
+ERROR 2023-04-10 05:34:49,395 elasticsearch_backend 599 ： Failed to query Elasticsearch using 'text:(中华人民共和国)': ConnectionError(<urllib3.connection.HTTPConnection object at 0x7fe9d8ff2978>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7fe9d8ff2978>: Failed to establish a new connection: [Errno 61] Connection refused)
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 229, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fe9d8ff2978>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/haystack/backends/elasticsearch_backend.py", line 589, in search
+    **self._get_doc_type_option(),
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 1627, in search
+    body=body,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7fe9d8ff2978>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7fe9d8ff2978>: Failed to establish a new connection: [Errno 61] Connection refused)
+ERROR 2023-04-10 05:34:49,401 elasticsearch_backend 599 ： Failed to query Elasticsearch using 'text:(中华人民共和国)': ConnectionError(<urllib3.connection.HTTPConnection object at 0x7fe9c135dd68>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7fe9c135dd68>: Failed to establish a new connection: [Errno 61] Connection refused)
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 229, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fe9c135dd68>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/haystack/backends/elasticsearch_backend.py", line 589, in search
+    **self._get_doc_type_option(),
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 1627, in search
+    body=body,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/transport.py", line 362, in perform_request
+    timeout=timeout,
+  File "/Users/wzj/.virtualenvs/wzj/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7fe9c135dd68>: Failed to establish a new connection: [Errno 61] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7fe9c135dd68>: Failed to establish a new connection: [Errno 61] Connection refused)
